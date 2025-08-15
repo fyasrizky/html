@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tabel Dalam Tabel</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      margin: 10px;
+    }
+    td, th {
+      border: 1px solid black;
+      padding: 8px;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Tabel Utama dengan Tabel Bersarang</h2>
+
+<table>
+  <tr>
+    <th>Nama</th>
+    <th>Detail</th>
+  </tr>
+  <tr>
+    <td>Ani</td>
+    <td>
+      <!-- Tabel di dalam tabel -->
+      <table>
+        <tr>
+          <th>Umur</th>
+          <th>Hobi</th>
+        </tr>
+        <tr>
+          <td>25</td>
+          <td>Membaca</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td>Budi</td>
+    <td>
+      <!-- Tabel di dalam tabel -->
+      <table>
+        <tr>
+          <th>Umur</th>
+          <th>Hobi</th>
+        </tr>
+        <tr>
+          <td>30</td>
+          <td>Olahraga</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
