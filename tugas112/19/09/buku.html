@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Biodata Siswa</title>
+</head>
+<body>
+    <h1>Form Biodata Siswa</h1>
+    
+    <form action="/submit_form" method="POST">
+        <label for="nim">NIM:</label>
+        <input type="text" id="nim">
+        <label for="Nama lengkap"><br>Nama lengkap</label>
+        <input type="text" id="Nama">
+        <label for="kelas"><br>Kelas:</label>
+        <select id="kelas">
+            <option value="XII">XII</option>
+            <option value="XI">XI</option>
+            <option value="X">X</option>
+        </select>
+        <label for="jurusan"><br>Kelas:</label>
+        <label id="kelas" name="kelas">
+            <input type="radio" id="teknik informasi">
+            <label for="kelas">teknik informatika:</label>
+            <input type="radio" id="sisttem informasi">
+            <label for="kelas">sistem informasi:</label>
+            <input type="radio" id="multimedia">
+            <label for="kelas">multimedia:</label>
+        <label for="birth_place"><br>Tempat Lahir dan Tanggal Lahir :</label>
+        
+          
+            <input type="text" name="tempat" id="Tempat"> 
+            <select name="tgl">
+              <option>Tanggal</option>
+              <option>1</option><option>2</option><option>3</option>
+              <option>4</option><option>5</option><option>6</option>
+              <option>7</option><option>8</option><option>9</option>
+              <option>10</option><option>11</option><option>12</option>
+              <option>13</option><option>14</option><option>15</option>
+              <option>16</option><option>17</option><option>18</option>
+              <option>19</option><option>20</option><option>21</option>
+              <option>22</option><option>23</option><option>24</option>
+              <option>25</option><option>26</option><option>27</option>
+              <option>28</option><option>29</option><option>30</option>
+              <option>31</option>
+            </select>
+            <select name="bulan">
+              <option>Bulan</option>
+              <option>Januari</option><option>Februari</option><option>Maret</option>
+              <option>April</option><option>Mei</option><option>Juni</option>
+              <option>Juli</option><option>Agustus</option><option>September</option>
+              <option>Oktober</option><option>November</option><option>Desember</option>
+            </select>
+            <select name="tahun">
+              <option>Tahun</option>
+              <option>2005</option><option>2006</option><option>2007</option><option>2008</option><option>2009</option><option>2010</option><option>2011</option>
+            </select>
+          
+        
+
+        <label for="jk"><br>jenis kelamin:</label>
+        <label id="jk" name="jk">
+            <input type="radio" value="Laki-laki" id="Laki-laki">
+            <label for="Laki-laki">Laki-laki</label>
+            <input type="radio" value="perempuan" id="perempuan">
+            <label for="perempuan">Perempuan</label>
+
+        <label for="alamat"><br>alamat</label>
+        <input type="text" id="alamat">
+
+        <label for="email"><br>Email</label>
+        <input type="text" id="email">  
+        <label for="@">@</label>   
+        <select id="@">
+            <option value="Gmail">Gmail.com</option>
+            <option value="Outlook">Outlook.com</option>
+            <option value="Yahoo">Yahoo.com</option>  
+        
+         <input type="submit" value="Submit">
+        <input type="reset" value="Cancel">
+       
+</body>
+</html>
