@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>WEBSITE RIZKY BANI</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    
+    .header {
+      background: orange;
+      text-align: center;
+      font-weight: bold;
+      font-size: 24px;
+      padding: 10px;
+    }
+
+  
+    .footer {
+      background: orange;
+      text-align: center;
+      font-size: 12px;
+      padding: 5px;
+    }
+
+  
+    .container {
+      display: flex;
+      border: 1px solid #000;
+      min-height: 150px;
+    }
+
+    
+    .menu {
+      width: 50%;
+      background: yellow;
+      padding: 3px;
+      font-weight: bold;
+    }
+    .menu a {
+      display: block;
+      margin: 8px 0;
+      color: blue;
+      text-decoration: none;
+    }
+    .menu a:hover {
+      color: red;
+    }
+
+    
+    .content {
+      width: 75%;
+      padding: 10px;
+      background: #eee;
+    }
+
+    #default {
+      display: block;
+    }
+
+    .jawaban {
+      display: none;
+    }
+    
+    .jawaban:target {
+      display: block;
+    }
+    
+    :target ~ #default {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">WEBSITE Fayaz</div>
+
+  <div class="container">
+    <div class="menu">
+      Menu <br>
+      <a href="#jwb1">Jawaban Tugas Individu 1</a>
+      <a href="#jwb2">Jawaban Tugas Individu 2</a>
+      <a href="#jwb3">Jawaban Tugas Individu 3</a>
+      <a href="#jwb4">Jawaban Tugas Individu 4</a>
+    </div>
+
+    <div class="content">
+      <div id="default">Content goes here</div>
+
+      <div id="jwb1" class="jawaban">Jawaban NO 1</div>
+      <div id="jwb2" class="jawaban">Jawaban NO 2</div>
+      <div id="jwb3" class="jawaban">Jawaban NO 3</div>
+      <div id="jwb4" class="jawaban">Jawaban NO 4</div>
+    </div>
+  </div>
+
+  <div class="footer">Copyright © Fayaz</div>
+
+</body>
+</html>
