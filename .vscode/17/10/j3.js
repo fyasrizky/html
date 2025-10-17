@@ -1,0 +1,13 @@
+var a=10;
+var b=5;
+var Perkalian=a*b;
+var Pembagian=a/b;
+var Penjumlahan=a+b;
+var Pengurangan=a-b;
+var Modulus=a%b;
+document.writeln("<HTML>");
+document.writeln("Perkalian : " + a + "*" + b + " = " + (a * b) + "<br>");
+document.writeln("Pembagian :" + a + "/" + b + "= " + (a / b) + "<br>");
+document.writeln("Penjumlahan :" + a + "+" + b + "=" + (a + b) + "<br>");
+document.writeln("Pengurangan:" + a + "-" + b + "=" + (a - b) + "<br>");
+document.writeln("Modulus :" + a + "%" + b + "= " + (a % b));
