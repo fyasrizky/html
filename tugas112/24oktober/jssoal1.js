@@ -1,0 +1,10 @@
+var Nama,barang,jumlah,Total;
+nama =prompt("Masukkan Nama Barang:")||'';
+barang =prompt("Masukkan Jumlah Barang:")||'';
+jumlah =prompt("Masukkan Harga Satuan:")||'';
+Total = barang * jumlah;
+document.writeln("<table border='1'>");
+document.writeln("<tr><td>Nama Barang</td><td>Jumlah</td><td>Harga Satuan</td><td>Total Harga</td></tr>");
+document.writeln("<tr><td>" + nama + "</td><td>" + barang + "</td><td>" + jumlah + "</td><td>" + (barang * jumlah) + "</td></tr>");
+document.writeln("<tr><td colspan='4'>FAYAZ RIZKY HERLAMBANG</td></tr>");
+document.writeln("</table>");
