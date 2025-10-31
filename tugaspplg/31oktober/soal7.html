@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <SCRIPT language="JavaScript" SRC="jssoal7.js"></SCRIPT>
+</head>
+<body>
+    <h2>Formulir Pendaftaran Calon Mahasiswa Baru</h2>
+    <hr>
+
+<form id="formPendaftaran">
+    <table>
+        <tr>
+             <td>Nama</td>
+             <td>:</td>
+             <td><input type="text" id="nama"></td>
+        </tr>
+        <tr>
+            <td>Alamat</td>
+            <td>:</td>
+            <td><input type="text" id="alamat"></td>
+        </tr>
+        <tr>
+            <td>Asal Sekolah</td>
+            <td>:</td>
+            <td>
+<select id="asal">
+<option value="SMA">SMA</option>
+<option value="SMK">SMK</option>
+ <option value="MA">MA</option>
+     </select>
+        </td>
+        </tr>
+        <tr>
+            <td>Jurusan dipilih</td>
+            <td>:</td>
+            <td>
+                    <input type="checkbox" name="jurusan" value="Teknik Informatika">Teknik Informatika<br>
+                    <input type="checkbox" name="jurusan" value="Manajemen Informatika">Manajemen Informatika
+            </td>
+        </tr>
+        <tr>
+            <td>Jenjang</td>
+            <td>:</td>
+            <td>
+                    <input type="radio" name="jenjang" value="Diploma">Diploma
+                    <input type="radio" name="jenjang" value="Sarjana">Sarjana
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" >
+                    <button type="button" onclick="kirim()">Kirim</button>
+                    <button type="reset">Reset</button>
+            </td>
+            </tr>
+        </table>
+    </form>
+    <hr>
+    <table>
+        <tr><td>Nama</td><td>:</td><td><input type="text" id="outNama" readonly></td></tr>
+        <tr><td>Alamat</td><td>:</td><td><input type="text" id="outAlamat" readonly></td></tr>
+        <tr><td>Asal Sekolah</td><td>:</td><td><input type="text" id="outAsal" readonly></td></tr>
+        <tr>
+            <td>Jurusan</td>
+            <td>:</td>
+            <td><textarea id="outJurusan" readonly></textarea></td>
+        </tr>
+        <tr><td>Jenjang</td><td>:</td><td><input type="text" id="outJenjang" readonly></td></tr>
+    </table>
+</body>
+</html>
+<style> body {
+            margin: 30px;
+        }
+        input[type="text"], textarea, select {
+            width: auto;
+        }
+        textarea {
+            height: 80px;
+            width: 350px;
+        }        
+</style>

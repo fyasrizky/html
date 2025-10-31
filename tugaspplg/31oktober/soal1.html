@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Latihan  Objek Text</title>
+</head>
+<body>
+
+<script language="JavaScript">
+function kirimDataDiri() {
+    var namastr = (document.fform.nama.value);
+    var alamatstr = (document.fform.alamat.value);
+    document.fform.onama.value = namastr;
+    document.fform.oalamat.value = alamatstr;
+}
+</script>
+<form name="fform">
+<h1>Memasukkan Data Dengan Objek Teks</h1>
+<hr>
+<PRE>
+Nama Anda : <input type="text" size="11" name="nama">
+Alamat    : <input type="text" size="25" name="alamat">
+</PRE>
+<BR>
+<input type="button" value="kirim" onclick="kirimDataDiri()">
+<input type="reset" value="ulang">
+<h3>Output</h3>
+<PRE>
+Jadi Nama Anda adalah : <input type="text" size="11" name="onama">
+Alamat Anda di : <input type="text" size="25" name="oalamat">
+</PRE>
+</form>
+</body>
+</html>
