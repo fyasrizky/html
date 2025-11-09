@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>Bukti Pembayaran</title>
+        <style>
+            body { font-family: Arial; margin: 30px; }
+            table {  width: 50%; width: auto; margin: auto;  }
+            td, th { border: 1px solid black; height: 100%; }
+            .judul { text-align:center; font-size:22px; font-weight:bold; }
+        </style>
+    </head>
+    <body>
+
+    <script>
+    function get(n){
+        return new URLSearchParams(window.location.search).get(n);
+    }
+    </script>
+
+   <table border="1" align="center">
+        <tr>
+            <td width="50"><img src="logo igasar.webp" width="70"></td>
+            <td class="judul">Travel Igasar Pindad Bandung</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align:center;">Bukti Pembayaran</td>
+        </tr>
+        <tr><td>Nama Penumpang :</td><td><script>document.write(get("nama"))</script></td></tr>
+        <tr><td>Tujuan :</td><td><script>document.write(get("tujuan"))</script></td></tr>
+        <tr><td>Jumlah Tiket :</td><td><script>document.write(get("jumlah"))</script></td></tr>
+        <tr><td>Member :</td><td><script>document.write(get("member"))</script></td></tr>
+        <tr><td>Harga Tiket :</td><td><script>document.write(get("harga"))</script></td></tr>
+        <tr><td>Sub Total :</td><td><script>document.write(get("subtotal"))</script></td></tr>
+        <tr><td>Diskon :</td><td><script>document.write(get("diskon"))</script></td></tr>
+        <tr><td>Total Bayar :</td><td><script>document.write(get("total"))</script></td></tr>
+        <tr><td>Dibayarkan :</td><td><script>document.write(get("bayar"))</script></td></tr>
+        <tr><td>Kembalian :</td><td><script>document.write(get("kembali"))</script></td></tr>
+    </table>
+    </body>
+    </html>
